@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="fundamentals_petsGenerics:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/fundamentals_petsGenerics_jar</output-path>
-    <root id="archive" name="fundamentals_petsGenerics.jar">
-      <element id="module-output" name="fundamentals" />
-      <element id="archive" name="petsGenerics.jar" />
-    </root>
-  </artifact>
-</component>
