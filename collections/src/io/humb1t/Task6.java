@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-public class Task6 {
+public class Task6 { //distinct number counter
     private static HashMap<Integer, Integer> myCache = new HashMap<>();
 
     private static void run() {

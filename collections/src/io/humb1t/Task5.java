@@ -6,6 +6,7 @@ import java.util.Queue;
 import java.util.Vector;
 
 public class Task5 {
+    //vector vs. queue
     public static void main(String[] args) {
         System.out.println("task#5");
         DecimalFormat df = new DecimalFormat("#.#########");

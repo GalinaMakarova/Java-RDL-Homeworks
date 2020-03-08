@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import static java.lang.Math.random;
 
 public class Main {
+    //tasks 1, 2, 4
     public static void main(String[] args) {
         //task#1
         Collection<String> c = Collections.EMPTY_LIST;
