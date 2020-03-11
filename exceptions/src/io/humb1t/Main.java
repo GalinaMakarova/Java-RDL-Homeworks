@@ -17,7 +17,6 @@ public class Main {
             throw new RuntimeException(e);
         }
         try (FileInputStream fileInputStream = new FileInputStream(args[0])) {
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -26,14 +25,14 @@ public class Main {
     }
 
     public static class LifeCycleAction {
-        public void execute() throws LifeCycleActionExecutionException, AccessDeniedException {
-            throw new LifeCycleActionExecutionException();
+        public void execute() throws LifeCycleActionExecutionException, AccessDeniedException, MyException {
+            //throw new LifeCycleActionExecutionException();
+            throw new MyException(); //task#1
         }
     }
 
     public static class LifeCycleActionExecutionException extends Exception {
     }
-
 
     public void exceptionVsResult() {
         final String result1 = (String) this.returnResult().value;
