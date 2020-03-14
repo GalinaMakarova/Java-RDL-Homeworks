@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Main {
+    //tasks 1, 2, 4
     public static void main(String[] args) {
         Collection<String> c = Collections.EMPTY_LIST;
         List<String> list = new ArrayList<>(c);
