@@ -3,8 +3,8 @@ package Builder;
 import java.util.List;
 
 public abstract class AEmailMessage implements IEmailMessage {
-    List<IRecepient> Recepients; // получатели
-    IRecepient Sender; // отправитель
-    String body; // текст письма
+    List<IRecipient> Recipients; // получатели
+    IRecipient Sender; // отправитель
+    String Body; // текст письма
     String Subject; // тема письма
 }
