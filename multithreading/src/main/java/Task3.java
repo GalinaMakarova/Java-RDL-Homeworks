@@ -13,7 +13,7 @@ public class Task3 {
         private final BlockingQueue<Integer> queue;
 
         @Override
-        public void run() {
+        public synchronized void run() { // исправлено по комментарию
             try {
                 for (int i = 0; i < 21; i++) {
                     queue.put(i);
@@ -34,9 +34,9 @@ public class Task3 {
         private final BlockingQueue<Integer> queue;
 
         @Override
-        public void run() {
+        public synchronized void run() { // исправлено по комментарию
             try {
-                while (true) {
+                while (!Thread.currentThread().isInterrupted()) {  // исправлено по комментарию
                     System.out.println("Consumer: removing, step#" + queue.take() + ". Buffer size = " + queue.remainingCapacity());
                     Thread.sleep(200);
                 }
